@@ -1,25 +1,28 @@
 {
-  "name": "mayam",
+  "name": "jak-lang",
   "version": "1.0.0",
-  "description": "JavaScript translator ke Bahasa Mayam (Jakarta)",
-  "main": "src/index.js",
+  "description": "Javanese-inspired programming language that compiles to JavaScript",
+  "type": "module",
   "bin": {
-    "mayam": "./bin/mayam.js"
+    "jak": "./bin/jak.js"
   },
-  "scripts": {
-    "test": "node test.js"
-  },
+  "files": [
+    "bin",
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
-    "mayam",
+    "jak",
+    "javanese",
     "javascript",
-    "translator",
-    "jakarta",
+    "compiler",
+    "programming-language",
     "cli"
   ],
-  "author": "Nama Kamu",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Syafaat-mayam/mayam"
+  "engines": {
+    "node": ">=18"
   }
 }
