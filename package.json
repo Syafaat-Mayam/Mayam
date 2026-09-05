@@ -1,0 +1,25 @@
+{
+  "name": "mayam",
+  "version": "1.0.0",
+  "description": "JavaScript translator ke Bahasa Mayam (Jakarta)",
+  "main": "src/index.js",
+  "bin": {
+    "mayam": "./bin/mayam.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "mayam",
+    "javascript",
+    "translator",
+    "jakarta",
+    "cli"
+  ],
+  "author": "Nama Kamu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Syafaat-mayam/mayam"
+  }
+}
