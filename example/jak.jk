@@ -1,0 +1,7 @@
+ono nama = "Syafaat"
+
+yen nama == "Syafaat" {
+  tampilno("Halo " + nama)
+} yen ora {
+  tampilno("Nama berbeda")
+}
