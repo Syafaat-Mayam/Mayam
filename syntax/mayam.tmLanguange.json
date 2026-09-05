@@ -1,0 +1,105 @@
+{
+  "scopeName": "source.mayam",
+  "patterns": [
+    {
+      "name": "comment.line.double-slash.mayam",
+      "match": "//.*$"
+    },
+    {
+      "name": "comment.block.mayam",
+      "begin": "/\\*",
+      "end": "\\*/"
+    },
+    {
+      "name": "keyword.control.mayam",
+      "match": "\\b(kalo|kagak|kalo_gak|pilih|kasus|standar|berenti|lanjut|balikin|coba|tangkap|bikin|akhirnya|kerjain_dulu|ulang|selagi)\\b"
+    },
+    {
+      "name": "keyword.declaration.mayam",
+      "match": "\\b(ada|tetep|ubah|kerjain|class|baru|ini|turunan|panggil)\\b"
+    },
+    {
+      "name": "keyword.module.mayam",
+      "match": "\\b(bawa|keluarin|keluarin_default)\\b"
+    },
+    {
+      "name": "keyword.async.mayam",
+      "match": "\\b(async|tunggu)\\b"
+    },
+    {
+      "name": "keyword.other.mayam",
+      "match": "\\b(hapus|ada_gak|jenis|instanceof|kosong|with|debugger)\\b"
+    },
+    {
+      "name": "support.function.console.mayam",
+      "match": "\\b(tunjukin|tunjukin_error|tunjukin_warning|tunjukin_info)\\b"
+    },
+    {
+      "name": "string.quoted.double.mayam",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.mayam",
+          "match": "\\\\(?:[btnfr\\\\\"]|u[0-9a-fA-F]{4})"
+        }
+      ]
+    },
+    {
+      "name": "string.quoted.single.mayam",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.mayam",
+          "match": "\\\\(?:[btnfr\\\\']|u[0-9a-fA-F]{4})"
+        }
+      ]
+    },
+    {
+      "name": "string.template.mayam",
+      "begin": "`",
+      "end": "`",
+      "patterns": [
+        {
+          "name": "meta.template.expression.mayam",
+          "begin": "\\$\\{",
+          "end": "\\}",
+          "patterns": [
+            {
+              "include": "$self"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "constant.numeric.mayam",
+      "match": "\\b[0-9]+(?:\\.[0-9]+)?\\b"
+    },
+    {
+      "name": "constant.language.boolean.mayam",
+      "match": "\\b(true|false)\\b"
+    },
+    {
+      "name": "constant.language.null.mayam",
+      "match": "\\b(null|undefined)\\b"
+    },
+    {
+      "name": "keyword.operator.arithmetic.mayam",
+      "match": "[+\\-*/%]"
+    },
+    {
+      "name": "keyword.operator.comparison.mayam",
+      "match": "===|!==|==|!=|<=|>=|<|>"
+    },
+    {
+      "name": "keyword.operator.logical.mayam",
+      "match": "&&|\\|\\|"
+    },
+    {
+      "name": "keyword.operator.assignment.mayam",
+      "match": "="
+    }
+  ]
+}
